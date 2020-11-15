@@ -14,5 +14,219 @@ text for employeer position, paragraph  :  color: #757575;
 
 
 grey text footer  color: rgba(255, 255, 255, 0.6)
-/*
+*/
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #757575;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: 'Raleway', 'Oleo Script', cursive, sans-serif;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192; /* 31px */
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.logo-top {
+  color: #000000;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.nav-main a,
+.nav-main-portfolio a {
+  color: #212121;
+}
+
+.nav-main a[href='index.html'] {
+  color: #2196f3;
+}
+
+.nav-main a:hover,
+.nav-main a:active,
+.top-contacts a:hover,
+.top-contacts a:active,
+.nav-main-portfolio a:hover,
+.nav-main-portfolio a:active,
+.top-contacts a:hover,
+.top-contacts a:active {
+  color: #2196f3;
+}
+
+.top-contacts a {
+  color: #757575;
+}
+
+.order-now {
+  background: #2f303a;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-now h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order-now a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-now-button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.our-advantages-cards {
+  font-style: normal;
+}
+
+.our-advantages-cards h3 {
+  color: #212121;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14; /* 16px */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.our-advantages-cards p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71; /* 24px */
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.section-what-we-do h2,
+.section-our-team h2 {
+  color: #212121;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section-our-team-list h3 {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-our-team-list p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.main-footer {
+  background: #2f303a;
+}
+
+.main-footer-contact-list a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.main-footer-contact-list a[target='_blank'] {
+  color: #ffffff;
+}
+
+/* ================ПОРТФОЛИО============ */
+
+.portfolio-nav > li {
+  height: 38px;
+  width: 110px; /* need to find how to do by content*/
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.portfolio-nav a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.nav-main-portfolio a[href='portfolio.html'] {
+  color: #2196f3;
+}
+
+.portfolio-cards h2 {
+  color: #212121;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-cards p {
+  color: #757575;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
