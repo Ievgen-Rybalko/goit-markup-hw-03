@@ -217,7 +217,8 @@ body {
 }
 
 .portfolio-nav a:hover,
-.portfolio-nav a:active {
+.portfolio-nav a:active .portfolio-nav p:hover,
+.portfolio-nav p:active {
   color: #ffffff;
 }
 
