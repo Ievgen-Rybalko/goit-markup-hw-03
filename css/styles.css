@@ -15,6 +15,16 @@ text for employeer position, paragraph  :  color: #757575;
 
 grey text footer  color: rgba(255, 255, 255, 0.6)
 */
+:root {
+  --basic-blue-color: #2196f3;
+  --text-common-light-color: #757575;
+  --text-headder-dark-color: #212121;
+  --text-white-color: #ffffff;
+  --text-black-color: #000000;
+  --background-main-color: #ffffff;
+  --background-medium-color: #f5f4fa;
+  --background-dark-color: #2f303a;
+}
 
 * {
   margin: 0;
@@ -30,77 +40,66 @@ a {
 }
 
 body {
-  background-color: #e5e5e5;
-  color: #757575;
+  color: var(--text-common-light-color);
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
 
 .header {
-  background: #ffffff;
+  background: var(--background-main-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-style: normal;
-  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 .logo {
   font-family: 'Raleway', 'Oleo Script', cursive, sans-serif;
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192; /* 31px */
   letter-spacing: 0.03em;
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--basic-blue-color);
 }
 
 .logo-top {
-  color: #000000;
+  color: var(--text-black-color);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--text-white-color);
 }
 
-.nav-main a,
-.nav-main-portfolio a {
-  color: #212121;
+.nav-main a {
+  color: var(--text-headder-dark-color);
 }
 
-.nav-main a[href='index.html'] {
-  color: #2196f3;
-}
-
+.nav-main a[href='./index.html'],
 .nav-main a:hover,
 .nav-main a:active,
 .top-contacts a:hover,
 .top-contacts a:active,
-.nav-main-portfolio a:hover,
-.nav-main-portfolio a:active,
 .top-contacts a:hover,
 .top-contacts a:active {
-  color: #2196f3;
+  color: var(--basic-blue-color);
 }
 
 .top-contacts a {
-  color: #757575;
+  color: var(--text-common-light-color);
 }
 
 .order-now {
-  background: #2f303a;
-  font-style: normal;
+  background: var(--background-dark-color);
   text-align: center;
   letter-spacing: 0.06em;
 }
 
 .order-now h1 {
-  color: #ffffff;
+  color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -110,8 +109,8 @@ body {
 }
 
 .order-now a {
-  color: #ffffff;
-  font-weight: bold;
+  color: var(--text-white-color);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
@@ -121,18 +120,19 @@ body {
 .order-now-button {
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: var(--basic-blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.our-advantages-cards {
-  font-style: normal;
+.our-advantages-cards,
+.section-what-we-do {
+  background-color: var(--background-main-color);
 }
 
 .our-advantages-cards h3 {
-  color: #212121;
-  font-weight: bold;
+  color: var(--text-headder-dark-color);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14; /* 16px */
   letter-spacing: 0.03em;
@@ -141,7 +141,7 @@ body {
 }
 
 .our-advantages-cards p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71; /* 24px */
   letter-spacing: 0.03em;
@@ -150,15 +150,20 @@ body {
 
 .section-what-we-do h2,
 .section-our-team h2 {
-  color: #212121;
-  font-weight: bold;
+  color: var(--text-headder-dark-color);
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.section-our-team {
+  background: var(--background-medium-color);
+}
+
 .section-our-team-list h3 {
-  color: #212121;
+  color: var(--text-headder-dark-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -167,7 +172,7 @@ body {
 }
 
 .section-our-team-list p {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -175,68 +180,80 @@ body {
 }
 
 .main-footer {
-  background: #2f303a;
+  background: var(--background-dark-color);
 }
 
 .main-footer-contact-list a {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .main-footer-contact-list a[target='_blank'] {
-  color: #ffffff;
+  color: var(--text-white-color);
 }
 
 /* ================ПОРТФОЛИО============ */
 
-.portfolio-nav p {
+.section-portfolio {
+  background: var(--background-main-color);
+}
+
+/*if not <a> then murkup cannot overpower "user agent stylesheet"*/
+.nav-main-portfolio a {
+  color: var(--text-headder-dark-color);
+}
+
+.nav-main-portfolio a:hover,
+.nav-main-portfolio a:active,
+.nav-main-portfolio a:focus {
+  color: var(--basic-blue-color);
+}
+
+.portfolio-nav .item {
+  display: block;
   height: 38px;
   width: 110px; /* need to find how to do by content*/
-  background: #f5f4fa;
+  background: var(--background-medium-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   text-align: center;
 }
 
-.portfolio-nav p:hover,
-.portfolio-nav p:active {
-  background: #2196f3;
+.portfolio-nav .item:hover,
+.portfolio-nav .item:active,
+.portfolio-nav .item:focus {
+  background: var(--basic-blue-color);
+  color: var(--text-white-color);
 }
 
-.portfolio-nav a {
-  color: #212121;
+.portfolio-nav .item {
+  color: var(--text-headder-dark-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border: 0px;
 }
 
-.portfolio-nav a:hover,
-.portfolio-nav a:active .portfolio-nav p:hover,
-.portfolio-nav p:active {
-  color: #ffffff;
-}
-
-.nav-main-portfolio a[href='portfolio.html'] {
-  color: #2196f3;
+.nav-main-portfolio a[href='./portfolio.html'] {
+  color: var(--basic-blue-color);
 }
 
 .portfolio-cards h2 {
-  color: #212121;
-  font-weight: bold;
+  color: var(--text-headder-dark-color);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-cards p {
-  color: #757575;
-  font-weight: normal;
+  color: var(--text-common-light-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

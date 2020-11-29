@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## Замечания по ДЗ №2
 
-You can use the [editor on GitHub](https://github.com/Ievgen-Rybalko/goit-markup-hw-02/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Alona Harnyk https://prnt.sc/vkvb2g
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Не задан цвет фона секции с членами команды.
 
-### Markdown
+### поправил
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+https://prnt.sc/vkvbo5 состояние ховера/фокуса стилизируйте для li \*\*
 
-```markdown
-Syntax highlighted code block
+### фокус только для интерактивных элементов, и ещё через li не менялся цвет шрифта. Дал <а> класс "item" и свойство display: block и отформатировал красиво <а>.
 
-# Header 1
-## Header 2
-### Header 3
+https://prnt.sc/vkvdir
 
-- Bulleted
-- List
+### перенёс
 
-1. Numbered
-2. List
+https://prnt.sc/vkvdy4 р удалить, вместо ссылки кнопка
 
-**Bold** and _Italic_ and `Code` text
+### удалил
 
-[Link](url) and ![Image](src)
-```
+Шрифты подключить одной ссылкой.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### done
 
-### Jekyll Themes
+Палитра цветов не вынесена в переменные.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ievgen-Rybalko/goit-markup-hw-02/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### done и белый с чёрным добавил только не знаю, не слишком ли белый/чёрный тоже в палитру добавлять
 
-### Support or Contact
+https://prnt.sc/vkvfho (и далее по коду) - это дефолтное значение. Задавайте это
+свойство только если есть необходимость его переопределить.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### deleted
+
+Жирность шрифта везде указывайте цифрами, придерживайтесь единого подхода.
+
+### done
