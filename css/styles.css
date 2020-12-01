@@ -441,8 +441,34 @@ body {
   padding-bottom: 94px;
 }
 
-.portfolio-cards .item:not(:nth-child(3n)) {
+.portfolio-cards img {
+  display: block;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.portfolio-cards .item {
   width: 370px;
+  margin-bottom: 30px;
+
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-cards h2 {
+  display: block;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-cards p {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
+.portfolio-cards .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
