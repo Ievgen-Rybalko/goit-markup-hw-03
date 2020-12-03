@@ -58,7 +58,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -68,17 +68,14 @@ body {
   font-size: 26px;
   line-height: 1.192; /* 31px */
   letter-spacing: 0.03em;
-}
-
-.logo {
   color: var(--basic-blue-color);
 }
 
-.logo-top {
+.logo-accent {
   color: var(--text-black-color);
 }
 
-.logo-footer {
+.logo-accent.logo-inverse {
   color: var(--text-white-color);
 }
 
@@ -129,7 +126,7 @@ body {
   color: var(--text-common-light-color);
 }
 
-.nav-main a[href='./index.html'],
+.nav-main .is-current,
 .nav-main a:hover,
 .nav-main a:active,
 .nav-main a:focus,
@@ -139,6 +136,15 @@ body {
   color: var(--basic-blue-color);
 }
 
+/* Pseudoelement */
+.nav-main a::after {
+  display: block;
+  content: '';
+  width: inherit;
+  height: 5px;
+  background: orange;
+}
+
 .nav-main a {
   display: block;
   padding-top: 32px;
@@ -146,7 +152,12 @@ body {
 }
 
 .order-now {
-  background: var(--background-dark-color);
+  /* background: var(--background-dark-color); */
+  /* background-image: url(../images/mg_background_hero.jpg); */
+  background: linear-gradient(#e66465 50%, #9198e5 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -359,29 +370,9 @@ body {
   background: var(--background-main-color);
 }
 
-.nav-main-portfolio {
-  display: flex;
-  margin-left: 93px;
-}
-
 /* for experiments */
 .nav-main-portfolio > li + li {
   margin-left: 50px;
-}
-
-/*if not <a> then murkup cannot overpower "user agent stylesheet"*/
-.nav-main-portfolio a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--text-headder-dark-color);
-}
-
-.nav-main-portfolio a:hover,
-.nav-main-portfolio a:active,
-.nav-main-portfolio a:focus {
-  color: var(--basic-blue-color);
 }
 
 .section-portfolio {
@@ -433,7 +424,7 @@ body {
   border: 0px;
 }
 
-.nav-main-portfolio a[href='./portfolio.html'] {
+.nav-main-portfolio a.is-current {
   color: var(--basic-blue-color);
 }
 
@@ -447,6 +438,12 @@ body {
   display: block;
   margin-top: -1px;
   margin-left: -1px;
+}
+
+.portfolio-cards .item:hover,
+.portfolio-cards .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-cards .item {
