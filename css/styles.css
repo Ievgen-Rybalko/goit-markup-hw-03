@@ -227,6 +227,10 @@ body {
   letter-spacing: 0.06em;
 }
 
+.section.our-advantages-cards {
+padding-bottom: 0;
+}
+
 .our-advantages-list .card {
   display: flex;
   justify-content: center;
